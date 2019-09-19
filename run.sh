@@ -6,5 +6,8 @@ cd eLeaveCore
 # watch -n 120 'git stash && git pull' &
 #npm run start:dev &
 # sleep 120
-../httpd-run.sh &
+
+# Removed on 19 September 2019 - documentation & testing now handled by steelburn/eleavedocs docker image.
+# ../httpd-run.sh &
+
 npm run start
