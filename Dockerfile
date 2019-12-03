@@ -3,8 +3,8 @@ COPY run.sh .
 COPY httpd-run.sh .
 RUN apk add --no-cache git nodejs npm python make curl thttpd && \
 	npm i -g npm@latest jest-cli && \
-	git clone https://github.com/zencomputersystems/eLeaveCore.git && \
-	cd eLeaveCore && \
+	git clone https://github.com/zencomputersystems/eLeaveForgotPasswordCore.git && \
+	cd eLeaveForgotPasswordCore && \
 	npm i && npm audit fix
 # RUN npm run test
 # RUN npm doc:build
@@ -17,4 +17,4 @@ CMD ["sh", "run.sh"]
 
 EXPOSE 3000 3001
 HEALTHCHECK --interval=2m --timeout=5s --start-period=2m \
-	CMD curl -f http://localhost:3000/api/docs/ || exit 1
+	CMD curl -f http://localhost:3002/api/docs/ || exit 1

@@ -1,5 +1,5 @@
 #!/bin/sh
-cd eLeaveCore
+cd eLeaveForgotPasswordCore
 
 # Commenting out the following two due to changing to webhook instead of constant checking
 # npm i

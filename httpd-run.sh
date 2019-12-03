@@ -1,5 +1,5 @@
 #!/bin/sh
-cd eLeaveCore
+cd eLeaveForgotPasswordCore
 # npm i
 npm run doc:build
 # npm run test
